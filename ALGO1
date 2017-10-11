@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num1,num2;
+    num1 = 100;
+    num2 = 20;
+            int soma = num1+num2;
+    printf("\nO seu peso e %d",soma);
+
+    int sub = num1-num2;
+    printf("\nO seu peso e %d",sub);
+
+    int multi = num1*num2;
+    printf("\nO seu peso e %d",multi);
+
+    int divi = num1/num2;
+    printf("\nO seu peso e %d",divi);
+
+return 0;
+}
+
