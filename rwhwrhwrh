@@ -1,0 +1,76 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+
+int main(){
+    int sel;
+
+
+    while(true){
+        printf("\n\nOpcao 1 - Multiplicador\nOpcao 2 - Divisivel por 3\nOpcao 3 - Dia da semana\n");
+        scanf("%d", &sel);
+        switch(sel){
+            case 1:
+
+                printf("Digite o numero que vai ser multiplicado\n");
+                int n1, n2;
+
+
+                scanf("%d", &n1);
+                printf("Digite o outro numero a ser multiplicado\n");
+                scanf("%d", &n2);
+
+                printf("O resultado vai ser %d", n1=(n1*n2));
+                break;
+            case 2:
+                printf("Digite um numero para verificar se ele e divisivel por 3\n");
+                int num;
+                scanf("%d", &num);
+                int resto = num % 3;
+                if(resto==0){
+                        system("cls");
+                        printf("O resultado e divisivel por 3", resto);
+                }
+                else{
+                        system("cls");
+                        printf("O resultado nao e divisivel por 3", resto);
+                }
+                //system("cls");
+                break;
+            case 3:
+                printf("Digite um dia da semana\n");
+                int dia_semana;
+
+                scanf("%d", &dia_semana);
+
+                if(dia_semana >=1 && dia_semana <=7){
+                    switch(dia_semana){
+                        case 2:
+                        case 3:
+                        case 4:
+                        case 5:
+                        case 6:
+                            system("cls");
+                            printf("\nDia util da semana");
+                        break;
+                        default:
+                            system("cls");
+                            printf("\nFinal de semana");
+                    }
+             case 4:
+                    system("exit");
+
+
+                break;
+                }
+            default:
+                printf("Nao teve entrada de valor");
+                break;
+
+        }
+
+
+    }
+    return 0;
+}
